@@ -1,2 +1,6 @@
 # geovoile-tracking
-Collect and merge race boat data from geovoile.com
+Collect race boat data managed by geovoile.com :
+ * Boat Name
+ * Positions
+
+Merge all in a sigle GPX file 
