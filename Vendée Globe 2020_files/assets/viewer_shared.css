@@ -1,0 +1,12 @@
+﻿#poiLayer g#city_22 {
+	mix-blend-mode:soft-light;
+	opacity:0.6;
+}
+#poiLayer g#city_22 text {
+	font-weight:bold;
+	text-shadow:1px 1px 1px #000000, -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000;
+	font-size:16px;
+}
+#poiLayer g#city_22 circle {
+	display:none;
+}

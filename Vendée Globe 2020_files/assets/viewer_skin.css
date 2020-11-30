@@ -1,0 +1,885 @@
+#progressline .axis {
+  background-color:rgba(6,49,81,0.07);
+}
+
+#progressline .startcity,
+#progressline .arrivalcity {
+  color:#8296A5;
+}
+
+#progressline .startpoint,
+#progressline .arrivalpoint {
+  background-color:#E30613;
+}
+
+#progressline .startpoint:after {
+  border-top-color:#E30613;
+}
+
+#progressline .arrivalpoint:before {
+  border-bottom-color:#E30613;
+}
+
+#progressline .extend.fleet {
+  background-color:rgba(6,49,81,0.15);
+}
+
+#progressline .extend.fleet:before {
+  border-bottom-color:rgba(6,49,81,0.15);
+}
+
+#progressline .extend.fleet:after {
+  border-top-color:rgba(6,49,81,0.15);
+}
+
+#progressline .extend.boat {
+  background-color:#152E45;
+}
+
+#progressline .activeboat {
+  background-color:#E30613;
+}
+
+#progressline .activeboat:before {
+  border-bottom-color:#E30613;
+}
+
+#progressline .activeboat:after {
+  border-top-color:#E30613;
+}
+
+#progressline .activeboat#fixed {
+  background-color:#E30613 !important;
+}
+
+#progressline .activeboat#fixed:before {
+  border-bottom-color:#E30613;
+}
+
+#progressline .activeboat#fixed:after {
+  border-top-color:#E30613;
+}
+
+#progressline .activeboat>svg {
+  fill:#E30613;
+}
+
+
+#buttons {
+  background-color:#EDF0F1;
+  border:1px solid;
+  border-color:rgba(237,240,241,1.00);
+  ;
+}
+
+.iconbutton {
+  background-color:rgba(255,255,255,0.00);
+}
+
+.iconbutton svg {
+  fill:#8596A6;
+  stroke:#8596A6;
+}
+
+.iconbutton.over {
+  background-color:#E30613;
+}
+
+.iconbutton.over svg {
+  fill:#FFFFFF;
+  stroke:#FFFFFF;
+}
+
+.iconbutton.on.alt:hover,
+.iconbutton.on {
+  background-color:#E30613;
+}
+
+.iconbutton.on.alt:hover svg,
+.iconbutton.on svg {
+  fill:#FFFFFF;
+  stroke:#FFFFFF;
+}
+
+.iconbutton.on.alt {
+  background-color:rgba(227,6,19,0.60);
+}
+
+
+#sig {
+  background-color:#00395E;
+}
+
+#graphics,
+#graphics svg {
+  background-color:#00395E;
+}
+#graphics svg#graphAdvancePos path {
+  fill:#89EC28;
+  stroke:#89EC28;
+  fill-opacity:0.3;
+}
+#graphics svg#graphAdvanceNeg path {
+  fill:#F5412A;
+  stroke:#F5412A;
+  fill-opacity:0.3;
+}
+#graphics svg#graph24h path {
+  stroke:#FFFFFF;
+}
+
+#graphics .variables {
+  background-color:#E30613;
+  color:#FFFFFF;
+}
+
+#graphics .variables:before,
+#graphics .variables:after {
+  border-top-color:#E30613;
+}
+
+#graphics .grid {
+  stroke:rgba(255,255,255,0.05);
+}
+
+#graphics .legend {
+  color:rgba(255,255,255,0.6);
+}
+
+#graphics:after {
+  color:#ffffff;
+}
+
+#bathyLayer rect {
+  fill:#00395E;
+}
+
+#bathyLayer image {
+  mix-blend-mode:overlay; /*normal;multiply;screen;overlay;darken;lighten;color-dodge;color-burn;hard-light;soft-light;difference;exclusion;hue;saturation;color;luminosity*/
+  opacity:0.2;
+}
+
+#groundLayer path {
+  fill:#AACBE3;
+}
+
+#boatsLayer path {
+  stroke:#000000;
+}
+
+#boatsLayer text {
+  fill:#FFFFFF;
+  opacity:0.4;
+}
+
+#tracksLayer g {
+  stroke-opacity:0.15;
+}
+
+#tracksSTMLayer g {
+  stroke-opacity:1;
+}
+
+#tracksLayer {
+  font-size:50px !important; /*define the slicer length*/
+}
+
+#tracksLayer g path.n1,
+#tracksSTMLayer g path.n1 {
+  display:none;
+}
+
+#routingsLayer {
+  stroke-dasharray:8,3;
+  stroke-width:1;
+}
+
+
+
+#orthoLayer {
+  stroke:rgba(227,6,19,1.00);
+}
+
+#areasLayer path {
+  fill:rgba(226,0,26,0.3);
+  stroke:#E30613;
+}
+
+#areasLayer path#AEZ {
+  fill:rgba(0,26,43,0.43);
+}
+
+#gatesLayer path {
+  stroke:#E30613;
+}
+
+#gatesLayer circle {
+  fill:#E30613;
+}
+
+#daynightLayer {
+  fill:#001A2B;
+}
+
+#referencesLayer {
+  stroke-dasharray:8,3;
+  stroke-width:1;
+}
+
+#referencesLayer path {
+  opacity:0.5;
+  stroke:#FFFFFF;
+}
+
+#referencesLayer circle {
+  opacity:0.5;
+  fill:#FFFFFF;
+}
+
+#referencesLayer g.currentPosition circle {
+  fill:#FFFFFF;
+  opacity:1;
+}
+
+#ruleLayer {
+  stroke-dasharray:8,3;
+}
+
+#ruleLayer>g>circle {
+  stroke:#E30613;
+  fill:#E30613;
+}
+
+#ruleLayer>g>path {
+  stroke:#E30613;
+}
+
+#ruleLayer>path {
+  stroke:#E30613;
+}
+
+#poiLayer g circle {
+  fill:#E30613;
+}
+
+#poiLayer g text {
+  fill:#FFFFFF;
+}
+
+#poiLayer g.city circle {
+  fill:#E30613;
+}
+
+#poiLayer g.city text {
+  fill:#FFFFFF;
+}
+
+#poiLayer g.start circle {
+  fill:#E30613;
+}
+
+#poiLayer g.start text {
+  fill:#FFFFFF;
+}
+
+#poiLayer g.arrv circle {
+  fill:#E30613;
+}
+
+#poiLayer g.arrv text {
+  fill:#FFFFFF;
+}
+
+#poiLayer g.isle circle {
+  fill:#E30613;
+}
+
+#poiLayer g.isle text {
+  fill:#E8EAEA;
+}
+
+#poiLayer g.ctry {
+  mix-blend-mode:soft-light;
+  opacity:0.9;
+}
+
+#poiLayer g.ctry text {
+  fill:#E8EAEA;
+}
+
+#poiLayer g.buoy circle {
+  fill:#E30613;
+}
+
+#poiLayer g.buoy text {
+  fill:#E30613;
+}
+
+#mediaLayer .geomedia .balloon {
+  fill:#FFFFFF;
+}
+#mediaLayer .geomedia .balloon.shadow {
+  fill:rgba(0,0,0,0.4);
+}
+#mediaLayer .geomedia .filled {
+  stroke:none;
+  fill:#000000;
+  }
+#mediaLayer .geomedia .stroked {
+  fill:none;
+  stroke:#000000;
+}
+
+
+.tip {
+  color:#ffffff;
+}
+
+#navionicsOption .wait path {
+  stroke:#223B59;
+}
+
+
+#coords {
+  color:#FFFFFF;
+  mix-blend-mode:normal;
+  opacity:1;
+}
+
+#coords .lat,
+#coords .lng {
+  text-shadow:1px 1px 1px #1E1E1E, -1px -1px 1px #1E1E1E, 1px -1px 1px #1E1E1E, -1px 1px 1px #1E1E1E;
+}
+
+#zoom .axis {
+  background-color:rgba(255,255,255,0.1);
+}
+
+#zoom .button svg {
+  fill:rgba(6,49,81,0.6);
+}
+
+#zoom .button .back {
+  background:linear-gradient(-45deg, #EDF0F1 35%, #EDF0F1 75%);
+  background:-moz-linear-gradient(-45deg, #EDF0F1 35%, #EDF0F1 75%);
+  background:-webkit-linear-gradient(-45deg, #EDF0F1 35%, #EDF0F1 75%);
+  background:-o-linear-gradient(135deg, #EDF0F1 35%, #EDF0F1 75%);
+}
+
+#zoom .button .face {
+  background:linear-gradient(135deg, #EDF0F1 35%, #EDF0F1 75%);
+  background:-moz-linear-gradient(135deg, #EDF0F1 35%, #EDF0F1 75%);
+  background:-webkit-linear-gradient(135deg, #EDF0F1 35%, #EDF0F1 75%);
+  background:-o-linear-gradient(-45deg, #EDF0F1 35%, #EDF0F1 75%);
+}
+
+#zoom .button:hover svg {
+  fill:rgba(227,6,19,1.00);
+}
+
+#zoom .button:hover .back {
+  background:linear-gradient(-45deg, #EDF0F1 35%, #EDF0F1 75%);
+  background:-moz-linear-gradient(-45deg, #EDF0F1 35%, #EDF0F1 75%);
+  background:-webkit-linear-gradient(-45deg, #EDF0F1 35%, #EDF0F1 75%);
+  background:-o-linear-gradient(135deg, #EDF0F1 35%, #EDF0F1 75%);
+}
+
+#zoom .button:hover .face {
+  background:linear-gradient(135deg, #EDF0F1 35%, #EDF0F1 75%);
+  background:-moz-linear-gradient(135deg, #EDF0F1 35%, #EDF0F1 75%);
+  background:-webkit-linear-gradient(135deg, #EDF0F1 35%, #EDF0F1 75%);
+  background:-o-linear-gradient(-45deg, #EDF0F1 35%, #EDF0F1 75%);
+}
+
+#zoom .button.on svg {
+  fill:rgba(255,255,255,1.00);
+}
+
+#zoom .button.on .back {
+  background:linear-gradient(-45deg, #E30613 35%, #E30613 75%);
+  background:-moz-linear-gradient(-45deg, #E30613 35%, #E30613 75%);
+  background:-webkit-linear-gradient(-45deg, #E30613 35%, #E30613 75%);
+  background:-o-linear-gradient(135deg, #E30613 35%, #E30613 75%);
+}
+
+#zoom .button.on .face {
+  background:linear-gradient(135deg, #E30613 35%, #E30613 75%);
+  background:-moz-linear-gradient(135deg, #E30613 35%, #E30613 75%);
+  background:-webkit-linear-gradient(135deg, #E30613 35%, #E30613 75%);
+  background:-o-linear-gradient(-45deg, #E30613 35%, #E30613 75%);
+}
+
+
+#time {
+  background-color:#040F21;
+}
+
+#refresh {
+  background-color:#040F21;
+  color:#ffffff;
+}
+
+#refresh circle {
+  stroke:#FFFFFF;
+  stroke-opacity:1;
+}
+
+#datetime {
+  background-color:#040F21;
+  color:#ffffff;
+}
+
+#datetime:after {
+  border-top-color:#040F21;
+}
+
+#chrono {
+  background-color:#040F21;
+}
+
+#chrono>span {
+  color:#FFFFFF;
+  opacity:1;
+}
+
+#chrono:after {
+  border-top-color:#040F21;
+}
+
+#replay path {
+  fill:rgba(255,255,255,1.00);
+}
+
+#timeline {
+}
+
+#timeline .backbar {
+  background-color:rgba(227,6,19,0.50);
+}
+
+#timeline .bar {
+  background-color:rgba(227,6,19,1.00);
+}
+
+#timeline .button .back {
+  background:linear-gradient(-45deg, #E30613 35%, #E30613 75%);
+  background:-moz-linear-gradient(-45deg, #E30613 35%, #E30613 75%);
+  background:-webkit-linear-gradient(-45deg, #E30613 35%, #E30613 75%);
+  background:-o-linear-gradient(135deg, #E30613 35%, #E30613 75%);
+}
+
+#timeline .button .face {
+  background:linear-gradient(135deg, #E30613 35%, #E30613 75%);
+  background:-moz-linear-gradient(135deg, #E30613 35%, #E30613 75%);
+  background:-webkit-linear-gradient(135deg, #E30613 35%, #E30613 75%);
+  background:-o-linear-gradient(-45deg, #E30613 35%, #E30613 75%);
+}
+
+
+#gridlines {
+  mix-blend-mode:normal;
+  text-align:right;
+  vertical-align:top;
+}
+
+#gridlines path {
+  stroke:#FFFFFF;
+}
+
+#gridlines text {
+  fill:#FFFFFF;
+  opacity:1;
+  text-shadow:*1px 1px 1px #1E1E1E, -1px -1px 1px #1E1E1E, 1px -1px 1px #1E1E1E, -1px 1px 1px #1E1E1E;
+}
+
+
+#boatclassesList {
+}
+
+#boatclassesList .name {
+  background-color:#FFFFFF;
+  border:1px solid;
+  border-color:#EBEDED;
+  color:#E30613;
+}
+
+#boatclassesList .arrow {
+  fill:#152E45;
+}
+
+#boatclassesList.open .arrow {
+  fill:#E30613;
+}
+
+#boatclassesList option {
+  background-color:#FFFFFF;
+  color:#E30613;
+}
+
+#boatclassesList option.on {
+  background-color:#E30613;
+  color:#FFFFFF;
+}
+
+#reportList {
+  background-color:#F4F7F8;
+  border:1px solid;
+  border-color:#F4F7F8;
+}
+
+#reportList .row {
+  border-top-color:transparent;
+  border-left-color:#F4F7F8;
+  border-right-color:#F4F7F8;
+  border-bottom-color:#F4F7F8;
+  background:linear-gradient(#FFFFFF 0%, #FFFFFF 55%, #FFFFFF 100%);
+  background:-moz-linear-gradient(#FFFFFF 0%, #FFFFFF 55%, #FFFFFF 100%);
+  background:-webkit-linear-gradient(#FFFFFF 0%, #FFFFFF 55%, #FFFFFF 100%);
+  background:-o-linear-gradient(#FFFFFF 0%, #FFFFFF 55%, #FFFFFF 100%);
+  color:#152E45;
+}
+
+#reportList .row:hover {
+  background:linear-gradient(#F4F7F8 0%, #F4F7F8 55%, #F4F7F8 100%);
+  background:-moz-linear-gradient(#F4F7F8 0%, #F4F7F8 55%, #F4F7F8 100%);
+  background:-webkit-linear-gradient(#F4F7F8 0%, #F4F7F8 55%, #F4F7F8 100%);
+  background:-o-linear-gradient(#F4F7F8 0%, #F4F7F8 55%, #F4F7F8 100%);
+  color:#152E45;
+}
+
+#reportList .row.on {
+  background:linear-gradient(#152E45 0%, #152E45 55%, #152E45 100%);
+  background:-moz-linear-gradient(#152E45 0%, #152E45 55%, #152E45 100%);
+  background:-webkit-linear-gradient(#152E45 0%, #152E45 55%, #152E45 100%);
+  background:-o-linear-gradient(#152E45 0%, #152E45 55%, #152E45 100%);
+  color:#FFFFFF;
+}
+
+#reportList .row.ARV + div.RAC_1 {
+  border-top:3px solid;
+  border-top-color:#B9BDBD;
+}
+
+#reportList .row .names>p:nth-child(1) {
+  color:#152E45;
+}
+
+#reportList .row .names>p:nth-child(2) {
+  color:#8296A5;
+  font-weight:bold;
+}
+
+#reportList .row>sub .latedate {
+  color:#E30613;
+}
+
+#reportList .row.on .names>p:nth-child(1) {
+  color:#FFFFFF;
+}
+
+#reportList .row.on .names>p:nth-child(2) {
+  color:rgba(255,255,255,0.7);
+}
+
+#reportList .row .rank {
+  color:#E30613;
+}
+
+#reportList .row .rank .up:after {
+  color:#5EBB00;
+}
+
+#reportList .row .rank .eq:after {
+  color:#7E7E7E;
+}
+
+#reportList .row .rank .down:after {
+  color:#D54500;
+}
+
+#reportList .row.on .rank {
+  color:#E30613;
+}
+
+#reportList .row.on .rank .up:after {
+  color:#82FF04;
+}
+
+#reportList .row.on .rank .eq:after {
+  color:#ACACAC;
+}
+
+#reportList .row.on .rank .down:after {
+  color:#FD2600;
+}
+
+#reportList .row.on .latedate {
+  color:#FFD9C6;
+}
+
+
+#dashboard {
+  background-color:#F5F7F7;
+}
+
+#dashboard header {
+  background-color:#264264;
+  border-color:rgba(0,0,0,0.1);
+  color:#FFFFFF;
+}
+
+#dashboard article {
+  background-color:#FFFFFF;
+  border-color:rgba(0,0,0,0.1);
+  color:#152E45;
+}
+
+#dashboard .pos * {
+  color:#89EC28;
+}
+
+#dashboard .neg * {
+  color:#F5412A;
+}
+
+#dashboardsummary {
+  border-color:rgba(0,0,0,0.1);
+  background-color:#FFFFFF;
+  color:#152E45;
+}
+#dashboardsummary .pos * {
+  color:#009D4F;
+}
+
+#dashboardsummary .neg * {
+  color:#9D0400;
+}
+
+
+#openDetails .face {
+  background-color:#E30613;
+}
+
+#openDetails .back {
+  background-color:#FFFFFF;
+}
+
+#openDetails svg {
+  fill:#FFFFFF;
+}
+
+
+#boatcard article {
+  border:1px solid;
+  border-color:rgba(255,255,255,0.00);
+}
+
+#boatcard .identity {
+  color:#FFFFFF;
+  background:linear-gradient(#040F21 0%, #040F21 55%, #040F21 100%);
+  background:-moz-linear-gradient(#040F21 0%, #040F21 55%, #040F21 100%);
+  background:-webkit-linear-gradient(#040F21 0%, #040F21 55%, #040F21 100%);
+  background:-o-linear-gradient(#040F21 0%, #040F21 55%, #040F21 100%);
+}
+
+#boatcard .identity .names>p:nth-child(1) {
+  color:#FFFFFF;
+}
+
+#boatcard .identity .names>p:nth-child(2) {
+  color:rgba(255,255,255,1.00);
+}
+
+#boatcard .rank {
+  color:#E10E17;
+}
+#boatcard .rank.up .progress:after {
+  color:#5EBB00;
+}
+
+#boatcard .rank.eq .progress:after {
+  color:#7E7E7E;
+}
+
+#boatcard .rank.down .progress:after {
+  color:#D54500;
+}
+
+#boatcard .infos {
+  color:#FFFFFF;
+}
+#boatcard .infos:before {
+  opacity:0.7;
+  background-color:#040F21;
+}
+
+#boatcard .infos .vmg {
+  color:#E10E17;
+}
+
+#boatcard .infos .vmg.neg,
+#boatcard .infos .vmg.neg * {
+  color:#E10E17;
+}
+
+#boatcard .infos .latedate {
+  color:#ffffff;
+}
+
+#boatcard .infos .pos,
+#boatcard .infos .pos * {
+  color:#ffffff;
+}
+
+#boatcard .infos .neg,
+#boatcard .infos .neg * {
+  color:#ffffff;
+}
+
+#boatcard .infos .live,
+#boatcard .infos .live * {
+  color:#CAFD00;
+}
+
+#boatcard .infos .off {
+  font-weight:bold;
+  padding-top:5px;
+  padding-bottom:55px
+}
+
+#boatcard .infos table thead {
+  color:#FFFFFF;
+}
+
+#boatcard .infos fieldset span,
+#boatcard .infos table tbody th {
+  color:#FFFFFF;
+}
+
+#boatcard .infos fieldset dfn {
+  color:rgba(255,255,255,0.7);
+}
+
+#boatcard .cross svg {
+  fill:#FFFFFF;
+  opacity:0.6;
+}
+
+#boatcard .infos .speeds th+td {
+  background-color:rgba(255,255,255,0.03);
+}
+
+#boatcard .infos .speeds th+td+td {
+  background-color:rgba(255,255,255,0.07);
+}
+
+#boatcard .infos .speeds th+td+td+td {
+  background-color:rgba(255,255,255,0.15);
+}
+
+#geoblog {
+  border:1px solid;
+  border-color:rgba(255,255,255,0.3);
+}
+
+#geoblog header {
+}
+
+#geoblog .identity {
+  background:linear-gradient(#E30613 0%, #E30613 55%, #E30613 100%);
+  background:-moz-linear-gradient(#E30613 0%, #E30613 55%, #E30613 100%);
+  background:-webkit-linear-gradient(#E30613 0%, #E30613 55%, #E30613 100%);
+  background:-o-linear-gradient(#E30613 0%, #E30613 55%, #E30613 100%);
+}
+
+#geoblog .identity .names>p:nth-child(1) {
+  color:#FFFFFF !important;
+}
+
+#geoblog .identity .names>p:nth-child(2) {
+  color:rgba(255,255,255,0.7) !important;
+}
+
+#geoblog .infos {
+  background-color:#E9EDEF;
+  color:#8296A5;
+}
+
+#geoblog>article {
+  background-color:#FFFFFF;
+  color:#152E45;
+}
+
+#geoblog>footer {
+  background-color:#152E45;
+}
+
+#geoblog>footer * {
+  color:rgba(255,255,255,0.7);
+}
+
+#geoblog .cross {
+  fill:#FFFFFF;
+}
+
+#geoblog .arrow {
+  fill:#FFFFFF;
+}
+
+#weather {
+}
+
+#weather section:before,
+#weather section:after {
+  border-top-color:#EDF0F1;
+}
+
+#weather section,
+#weather select,
+#weather option,
+#weather .date,
+#weather .list:hover option {
+  background-color:#EDF0F1;
+  color:#152E45;
+}
+
+#weather.waiting .date {
+  color:rgba(6,49,81,0.3);
+}
+
+#weather .button,
+#weather .list {
+  fill:#152E45;
+}
+
+#weather .wait {
+  stroke:#152E45;
+}
+
+#weather .button:hover,
+#weather .list:hover,
+#weather .list.open {
+  fill:#E30613;
+}
+
+#weather .list:hover .date,
+#weather .list.open .date,
+#weather .list:hover select {
+  color:#E30613;
+}
+
+#weather option.on {
+  background-color:#E30613;
+  color:#ffffff;
+  font-weight:bold;
+}
+
+#weather legend div {
+  color:#FFFFFF;
+  text-shadow:1px 1px 1px #1E1E1E, -1px -1px 1px #1E1E1E, 1px -1px 1px #1E1E1E, -1px 1px 1px #1E1E1E;
+}
+
+#leafletcredits a {
+  color:##E42312;
+}
+

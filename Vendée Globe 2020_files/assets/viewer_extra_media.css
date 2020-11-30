@@ -1,0 +1,437 @@
+﻿@media screen and (min-width:901px) {
+	#sig {
+		border-radius:25px;
+	}
+	#zoomwindow {
+		bottom:calc(5vmin + 70px);
+	}
+	
+	#datetime u {
+		display:inline-block;
+		width:20px;
+		text-align:center;
+	}
+
+	#weather {
+		top:0;
+	}
+}
+
+
+@media screen and (max-width:1200px) {
+	#vr {
+		right:10px;
+		width:150px;
+		height:70px;
+	}
+	#time {
+		bottom:22px;
+		right:185px;
+	}
+	#datetime big {
+		display:none;
+	}
+	#datetime small {
+		display:inline-block;
+	}
+
+}
+
+
+@media screen and (max-width:1050px) {
+	#vr {
+		top:20px;
+		bottom:auto;
+		left:5px;
+		right:auto;
+		width:75px;
+		height:35px;
+	}
+	#main.WEATHER #vr {
+		top:40px !important;
+	}
+
+	#time {
+		bottom:13px;
+		right:60px;
+	}
+}
+
+
+@media screen and (max-width:900px) {
+	#sig {
+		left:0;
+		top:0;
+		bottom:95px;
+	}
+	#zoomwindow {
+		bottom:calc(5vmin + 35px);
+	}
+
+	#buttons {
+		top:0;
+		transform:none;
+		bottom:auto;
+	}
+	#report {
+    bottom:0px;
+		left:0;
+		right:0;
+		top:auto;
+		height:95px;
+		z-index:600;
+	}
+	#report:before {
+		content:'';
+		position:absolute;
+		top:0;
+		left:0;
+		width:10px;
+		height:10px;
+		background-color:#002A45;
+	}
+			#report.open {
+				height:auto;
+				top:0px;
+				bottom:0;
+			}
+			#openDetails {
+				z-index:700;
+			}
+			#report.open #reportList {
+				border-radius:0;
+			}
+					#reportList .row {
+						height:95px;
+						padding: 5px 5px 0 110px;
+						box-sizing:border-box;
+						margin-top:0;
+						border-radius:0;
+					}
+
+					#reportList .row:first-of-type {
+						margin-top:0;
+					}
+					#reportList .row.on {
+						background:linear-gradient(#FFFFFF 0%, #FFFFFF 55%, #FFFFFF 100%);
+						background:-moz-linear-gradient(#FFFFFF 0%, #FFFFFF 55%, #FFFFFF 100%);
+						background:-webkit-linear-gradient(#FFFFFF 0%, #FFFFFF 55%, #FFFFFF 100%);
+						background:-o-linear-gradient(#FFFFFF 0%, #FFFFFF 55%, #FFFFFF 100%);
+						color:#152E45;
+					}
+					#reportList .names>p:nth-child(1) {
+						white-space:normal;
+					}
+					#reportList .row.on .names>p:nth-child(1) {
+						color:#152E45;
+					}
+					#reportList .row.on .names>p:nth-child(2) {
+						color:#8296A5;
+					}
+					#reportList .photo {
+						left:6px;
+						top:8px;
+					}
+
+					#reportList .rank {
+						top:3px;
+						left:65px;
+						font-size:35px;
+						line-height:32px;
+						width:38px;
+					}
+					#reportList .rank .progress, 
+					#reportList .rank.up .progress,
+					#reportList .rank.down .progress {
+						top:25px;
+						font-size:12px;
+					}
+
+	#openDetails {
+		left:auto;
+		right:0px;
+		width:40px;
+		height:40px;
+		background-color:transparent;
+		border-radius:50%;
+	}
+	#openDetails:after{
+		content:''; 
+		position:absolute;
+		display:block;
+		left:10px;
+		top:10px;
+		width:20px;
+		height:20px;
+		background-image:url(opendetail.svg);
+		background-size:contain;
+		font-weight:900;
+		opacity:0.5;
+	}
+	#openDetails .button {
+		display:none;
+	}
+			#openDetails.closed {
+				top:auto;
+				bottom:55px;
+			}
+			#openDetails.open {
+				top:10px;
+				bottom:auto;
+			}
+			#openDetails.open:after {
+				transform:rotate(180deg);
+			}
+
+	#vr {
+		top:20px;
+		bottom:auto;
+		left:5px;
+		right:auto;
+		width:75px;
+		height:35px;
+	}
+			#vr .roundedbackground {
+				display:none;
+			}
+			#vr .rectbackground {
+				display:inherit;
+			}
+
+	#time {
+		bottom:100px;
+		left:10px;
+		right:60px;
+		height:50px;
+		border-radius:25px;
+		background-color:rgba(4,15,33,0.1);
+	}
+			#datetime {
+				padding-left:20px;
+			}
+			#timeline {
+				padding-right:26px;
+			}
+
+	#boatcard {
+		top:5px !important;
+		left:5px !important;
+		right:5px !important;
+	}
+	#boatcard .identity {
+		display:block !important;
+	}
+	#boatcard .rank {
+		display:block !important;
+		top:20px;
+		font-size:40px;
+		width:45px;
+	}
+	#boatcard .infos {
+		 height:auto !important; 
+		 font-size:12px; 
+		 line-height:16px; 
+		 padding-right:0; 
+	}
+	#boatcard .cross {
+		right:120px;
+	}
+	#boatcard.STA article, 
+	#boatcard.ARV article {
+		padding-right:0;
+	}
+	#boatcard.STA .cross, 
+	#boatcard.ARV .cross {
+		right:10px;
+	}
+
+
+	#main.WEATHER #boatcard {
+		top:40px !important;
+	}
+	#weather {
+		top:0;
+	}
+	#zoom {
+		transform:none;
+		bottom:35px;
+	}
+	#zoom .button .back {
+		border-radius:50%;
+	}
+	#zoom .button .face {
+		border-radius:50%;
+	}
+}
+
+
+@media screen and (max-width:500px) {
+	#boatcard article {
+		padding-right: 80px;
+	}
+	#boatcard .infos2 th {
+		display:none !important;
+	}
+	#boatcard .infos3 {
+		width:60px;
+	}
+			#boatcard .infos3 h3 {
+				font-size:11px;
+			}
+					#boatcard .infos3 div label {
+						font-size:12px;
+					}
+					#boatcard .infos3 div dfn {
+						font-size:12px;
+						line-height:16px;
+					}
+	#boatcard .infos table {
+	}
+	#boatcard .infos table th,
+	#boatcard .infos table td {
+		white-space:nowrap;
+	}
+	#boatcard .cross {
+		right:85px;
+	}
+
+}
+
+
+@media screen and (max-width:430px) {
+
+	#boatcard article {
+		padding-right:0;
+	}
+	#boatcard .infos3 {
+		position:relative;
+		top:auto;
+		bottom:auto;
+		left:auto;
+		right:auto;
+		width:auto;
+		margin-top:5px;
+		height:75px;
+		padding:3px;
+	}
+			#boatcard .infos3 h3 {
+				display:none;
+			}
+					#boatcard .infos3 div {
+						position:relative;
+						display:inline-block;
+						margin-bottom:0;
+						height:calc(100% - 8px);
+						width:calc(25% - 6px);
+						box-sizing:border-box;
+						vertical-align:top;
+					}
+					#boatcard .infos3 div+div {
+						margin-left:5px;
+					}
+					#boatcard .infos3 div label {
+						height:30%;
+					}
+					#boatcard .infos3 div p {
+						position:relative;
+						top:35%;
+						transform:translateY(-50%);
+						width:100%;
+					}
+					#boatcard .infos3 div dfn {
+						font-size:10px;
+						white-space:nowrap;
+						line-height:16px;
+						text-align:center;
+					}
+	#boatcard .infos table {
+	}
+	#boatcard .infos table th,
+	#boatcard .infos table td {
+		white-space:nowrap;
+	}
+
+	#boatcard .cross {
+		right:10px;
+	}
+
+}
+
+
+@media screen and (max-width:350px) {
+	#boatcard .infos1 u,
+	#boatcard .infos1 .km {
+		display:none !important;
+	}
+	#boatcard .infos1 th+td+td {
+		width:100%;
+		text-align:left !important;
+	}
+}
+
+
+@media screen and (max-width:500px) and (max-height:580px) {
+	#boatcard .infos2 u {
+		display:none !important;
+	}
+}
+
+@media screen and (max-width:500px) and (max-height:535px) {
+	#boatcard .infos3 {
+		display:none !important;
+	}
+}
+
+
+@media screen and (max-height:600px) {
+  #buttons .group + .group {
+	  padding-top:14px;
+  }
+	#boatcard .infos1 {
+		border-radius:0;
+		margin-bottom:0;
+		padding-bottom:0;
+	}
+	#boatcard .infos2 {
+		border-radius: 0 0 15px 15px;
+		padding:10px;
+	}
+	#boatcard .infos table.speeds {
+		margin-top: 0px;
+	}
+	#boatcard .identity {
+		padding-bottom:0px;
+	}
+
+}
+
+
+@media screen and (max-height:520px) {
+  #bt_gridlines {
+    display:none;
+  }
+}
+
+
+@media screen and (max-height:510px) {
+  #buttons .group + .group {
+	  padding-top:0;
+  }
+  #bt_labels,
+  #bt_zoomtop3 {
+    display:block;
+  }
+  body.FULLSCREEN #bt_labels {
+    height:inherit;
+  }
+
+
+
+}
+
+
+@media screen and (max-height:400px) {
+  #bt_labels {
+    display:none;
+  }
+}

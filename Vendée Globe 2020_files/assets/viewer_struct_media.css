@@ -1,0 +1,599 @@
+﻿@media screen and (max-width:900px) {
+  #inReducedMode {
+   display:inline; 
+  }
+  #sig {
+    left:5px;
+    top:78px;
+  }
+    body.RACE.MULTICLASS #sig {
+      top: 108px;
+    }
+    body.FULLSCREEN #sig {
+      top: 63px;
+    }
+    body.RACE.MULTICLASS.FULLSCREEN #sig {
+      top: 90px;
+    }
+
+  #graphics {
+    left:5px;
+    top:85px;
+  }
+    body.RECORD #graphics {
+      top: 75px;
+    }
+    body.RACE.MULTICLASS #graphics {
+      top: 108px;
+    }
+
+    body.FULLSCREEN #graphics {
+      top: 63px;
+    }
+
+    body.RACE.MULTICLASS.FULLSCREEN #graphics {
+      top: 90px;
+    }
+    #graphics .variables {
+      *margin-right:0;
+    }
+    #graphics .variables:before,
+    #graphics .variables:after {
+      border-top-width:21px; 
+    }
+    #graphics .variables:after {
+      *display:none;
+    }
+        #graphics .variables td {
+          line-height:18px;
+          font-size:12px;
+          padding:0 2px;
+        }
+  
+  #navionicsOption {
+    top:auto;
+    bottom:3px;
+  }
+  
+  #progressline .startcity,
+  #progressline .arrivalcity {
+    display:none;
+  }
+    #bt_fullscreen,
+    #bt_zoommanual {
+      *display:none !important;
+    }
+  #buttons {
+    bottom:5px;
+    top: 15px;
+  }
+    #buttons span+span {
+      padding-top:0;
+    }
+  
+  #zoom {
+    right:0;
+    top:35px;
+    bottom:-5px;
+    height:auto;
+  }
+    body.TRACKING #zoom {
+      top:00px;
+    }
+    #zoom .bar {
+      display:block;
+    }
+  #zoom>.button {
+    display:none;
+  }  
+  #zoom .text {
+    display:none;
+  }  
+  #time {
+    left:5px;
+  }
+    #refresh {
+      padding:0px 2px;
+    }
+    #datetime,
+    #chrono {
+      padding:0 2px;
+      font-size:14px;
+      *font-weight:normal;
+    }
+    #chrono {
+      display:none !important;
+    }
+    #chrono+td {
+      padding:0 8px;
+    }
+    #datetime big {
+      display:none;
+    }
+    #datetime small {
+      display:inline;
+    }
+    #timeline {
+			*display:none;
+      padding-left:4px;
+      padding-right:12px;
+    }
+      #timeline span {
+        *width:calc(100% - 20px);
+      }
+      #timeline b {
+        *display:none;
+      }
+    #coords {
+      display:none; 
+    }
+    #replay {
+      display:none !important;
+    }
+    #replay {
+      padding:0 10px;
+    }
+    #replay svg.buttons {
+      width:26px;
+      height:25px;
+    }
+    #replay svg.slow,
+    #replay svg.fast {
+      width:18px;
+      height:18px;
+    }
+
+
+  #report {
+    top:15px;
+    right:50px;
+    width:auto;  
+    height:60px;
+    overflow:visible; 
+    -webkit-transition: height 400ms;
+       -moz-transition: height 400ms;
+        -ms-transition: height 400ms;
+         -o-transition: height 400ms;
+            transition: height 400ms;
+  }
+    body.RACE.MULTICLASS #report {
+      top:15px;
+      height:90px;
+    }
+    
+    #report.closed {
+      *height:60px !important;
+    }
+    #report.open {
+      height:auto;
+      bottom:33px;
+    }
+    #report.open #reportList .row:last-of-type {
+      margin-bottom:40px;
+    }
+  
+  #boatclassesList {
+    height:24px;
+  }
+      #boatclassesList select {
+        height:24px;
+      }
+      #boatclassesList option {
+        font-size:16px;
+      }
+      #boatclassesList .name {
+        font-size:16px;
+        font-weight:bold;
+      }
+      #boatclassesList .arrow {
+        top:8px;
+      }
+  
+
+  #reportList {
+    overflow:auto; 
+    top:34px;
+    z-index:300;
+  }
+    body.RACE.MULTICLASS #reportList {
+      top:29px;
+    }
+    
+      #reportList .row {
+        height:60px;
+        padding-left:85px;
+        border-left-width:0;
+      }
+      #reportList .row.on {
+        border-color:transparent;
+      }
+      #reportList .photo {
+        left:0px;
+        top:0px;
+      }
+      #reportList .identity img {
+      }
+      #boatcard .rank,
+      #reportList .rank {
+        font-size:16px;
+        line-height:14px;
+        width:2.4ex;
+      }
+      #reportList .rank {
+        top:2px;
+        left:60px;
+      }
+      #reportList .rank b:after,
+      #reportList .rank up:after,
+      #reportList .rank .down:after {
+        top:14px;
+        font-size:11px;
+      }
+      #reportList .names>p:nth-child(1) {
+        font-size:16px;
+        line-height:14px;
+        font-weight:bold;
+				white-space:nowrap;
+    
+      }
+      #reportList .names>p:nth-child(2) {
+        font-size:13px;
+        line-height:13px;
+				white-space:nowrap;
+      }
+
+      #reportList .infos {
+        font-size:12px;
+        line-height:12px;
+        margin-top:2px;
+      }
+        
+      #reportList .infos .dtl {
+        margin-right:32px;
+      }
+      
+  #dashboard {
+    display:none;
+    left:5px;
+    right:48px;
+    width:auto;
+    top:15px;
+    bottom:33px;
+    overflow:auto;
+  }
+      #dashboard>div {
+        padding-bottom:33px;
+      }
+      #dashboard h1 {
+        font-size:1.3rem;
+        height:25px;
+        line-height:25px;
+        font-weight:bold;
+      }
+      #dashboard big {
+        font-size:1.4rem;
+        line-height:1.4rem; 
+        margin-bottom:0.1rem;
+      }
+      #dashboard small {
+        font-size:0.9rem;  
+        line-height:0.9rem; 
+      }
+      #dashboard section>* {
+        margin-bottom:3px;
+      }
+      #dashboard header,
+      #dashboard footer {
+        padding:2px;
+      }
+    
+  #dashboardsummary {
+    display:block;
+  }
+  
+#openDetails {
+  display:block;
+  position:absolute;
+  left:1px;
+  width:70px;
+  height:35px;
+  overflow:hidden;
+  z-index:321;
+}
+    body.TRACKING #openDetails {
+      display:none !important;
+    }
+    body.RACE.MULTICLASS #openDetails.closed {
+      top:104px;
+    }
+    body.FULLSCREEN #openDetails.closed {
+      top:59px;
+    }
+    body.FULLSCREEN.RACE.MULTICLASS #openDetails.closed {
+      top:89px;
+    }
+    #openDetails.transition {
+      display:none;
+    }
+    #openDetails.closed {
+      top:75px;
+    }
+    #openDetails.open {
+      bottom:33px;
+    }
+    #openDetails .button {
+      position:absolute;
+      left:0;
+      width:70px;
+      height:70px;
+    }
+        #openDetails.closed .button {
+          top:-35px;
+        }
+        #openDetails.open .button {
+          top:0;
+        }
+    #openDetails .back {
+      position:absolute;
+      top:0;
+      left:0;
+      width:70px;
+      height:70px;
+      -moz-border-radius:70px;
+      -webkit-border-radius:70px;    
+      border-radius:70px;
+    }
+    #openDetails .face {
+      position:absolute;
+      top:4px;
+      left:4px;
+      width:62px;
+      height:62px;
+      -moz-border-radius:62px;
+      -webkit-border-radius:62px;    
+      border-radius:62px;
+    }
+    #openDetails svg {
+      position:absolute;
+      width:12px;
+      height:12px;
+    }
+    #openDetails svg.plus {
+      left:29px;
+      top:45px;
+    }
+    #openDetails svg.minus {
+      left:29px;
+      top:12px;
+    }
+
+  #boatcard {
+    top:0 !important;
+    left:0 !important;
+    right:0 !important;
+    z-index:1000;
+    pointer-events:inherit;
+    filter:none;
+  }
+  #main.WEATHER #boatcard {
+    top:28px !important;
+  }
+      #boatcard article {
+        width:100% !important;
+        box-sizing:border-box;
+        border:0 !important;
+      }
+      #boatcard .identity,
+      #boatcard .rank {
+        display:none !important;
+      }
+      #boatcard.GAME .rank,
+      #boatcard.GAME .identity {
+        display:block !important;
+      }
+      #boatcard .infos:before {
+        opacity:1;
+      }
+      #boatcard .infos {
+        height:120px !important;
+        font-size:12px;
+        line-height:16px;
+        padding-right:24px;
+      }
+      #boatcard.GAME .infos {
+        height:auto !important;
+      }
+      body.RECORD #boatcard .infos {
+        height:100px !important;
+      }     
+      #boatcard article.qd1,
+      #boatcard article.qd2,
+      #boatcard article.qd3,
+      #boatcard article.qd4,
+      #boatcard article.qd5,
+      #boatcard article.qd6,
+      #boatcard article.qd7,
+      #boatcard article.qd8 {
+        left:0 !important;
+        top:0 !important;
+        transform:none !important;
+      }
+      #boatcard .infos fieldset.loc,
+      #boatcard .infos fieldset.dist .dtf,
+      #boatcard .infos fieldset.dist .dtl {
+        display:none;
+      }
+      #boatcard .infos fieldset.dist .dtls {
+        text-align:right;
+        margin-right:15px;
+      }
+      #boatcard .infos .dist .dtlprogress {
+        width:50px;
+      }
+      #boatcard .infos .dist .dtlprogress.pos:before,
+      #boatcard .infos .dist .dtlprogress.neg:before {
+        position:absolute;
+        left:0;
+        top:0;
+      }
+      #boatcard .infos table th {
+        width:auto;
+      }
+      #boatcard .infos table.speeds {
+        margin-top:5px;
+      }
+      #boatcard .infos.HLD .dist,
+      #boatcard .infos.CLG .dist {
+        display:none;
+      }
+      #boatcard .infos.RAC_N_LIVE fieldset.dist,
+      #boatcard .infos.RAC_1_LIVE fieldset.dist,
+      #boatcard .infos.RAC_N_LIVE_ARRIVAL fieldset.dist,
+      #boatcard .infos.RAC_1_LIVE_ARRIVAL fieldset.dist,
+      #boatcard .infos.RAC_N_LIVE p.lastreport,
+      #boatcard .infos.RAC_1_LIVE p.lastreport,
+      #boatcard .infos.RAC_N_LIVE_ARRIVAL p.lastreport,
+      #boatcard .infos.RAC_1_LIVE_ARRIVAL p.lastreport,
+      #boatcard .infos.RAC_N_LIVE table.speeds,
+      #boatcard .infos.RAC_1_LIVE table.speeds,
+      #boatcard .infos.RAC_N_LIVE_ARRIVAL table.speeds,
+      #boatcard .infos.RAC_1_LIVE_ARRIVAL table.speeds {
+        display:none;
+      }
+      
+    #boatcard .cross {
+      display:block;
+    }
+
+  #weather {
+    left:0px;
+    right:50px;
+    top:78px;
+  }  
+    #weather legend {
+      display:none;
+    }  
+    body.FULLSCREEN #weather {
+    top:63px;
+    }
+    body.RACE.MULTICLASS #weather {
+      top:108px;
+    }
+    body.FULLSCREEN.MULTICLASS #weather {
+      top:89px;
+    }
+    #weather section {
+      text-align:right;
+      padding-right:15px;
+    }  
+    #weather .wait {
+      left:auto;
+      right:220px;
+    }
+    #weather section:after,
+    #weather section:before {
+      display:none;
+    }
+    #weather section,
+    #weather.squid section {
+      width:100% !important;
+    }
+    #weather.squid section a {
+      display:block;
+      position:absolute;
+      top:16px;
+      left:50%;
+      margin-left:-22px;
+      right:auto;
+      width:44px;
+      height:24px;
+    }
+
+
+}
+
+
+@media screen and (max-width:750px) {
+    #reportList {
+      border-width:0 !important;  
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    #geoblog {
+      left:5px;
+      right:5px;
+      top:auto;
+      bottom:5px;
+      min-width:initial;
+      max-width:initial;
+    }
+    #geoblog article {
+      max-height:initial;
+      
+    }
+    #geoblog .hat {
+      max-height:80px;
+      overflow:auto;
+    }
+    #geoblog .content {
+      max-height:150px;
+      overflow:auto;
+    }
+    #geoblog #mediaVideo {
+      min-width:initial;
+    }
+    #weather .wait {
+      right:190px;
+    }
+    
+}
+
+
+@media screen and (max-width:400px) {
+  #weather .first,
+  #weather .play,
+  #weather .last {
+    display:none;
+  }
+}
+
+
+@media screen and (max-width:360px) {
+  #chrono {
+    display:none;
+  }
+}
+
+
+@media screen and (max-width:280px) {
+  #chrono {
+    display:none;
+  }
+  #boatcard .infos table.speeds td:first-of-type+td {
+    display:none;
+  }
+  
+}
+
+
+@media screen and (max-height:670px) {
+  #buttons .group + .group {
+	  padding-top:0;
+  }
+
+}
+
+
+@media screen and (max-height:510px) {
+  #bt_labels,
+  #bt_rule,
+  #bt_zoomtop3,
+  #bt_gridlines {
+    display:none;
+  }
+  body.FULLSCREEN #bt_labels {
+    height:32px;
+  }
+}

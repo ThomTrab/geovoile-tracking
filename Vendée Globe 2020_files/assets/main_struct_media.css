@@ -1,0 +1,79 @@
+﻿@media screen and (max-width:1000px) {
+  #logo {
+    left:10px;
+    transform:none;
+  }
+}
+@media screen and (max-width:900px) {
+  #header {
+    min-height:80px;
+  }
+  #subtitle {
+    font-size:25px;
+  }
+  #legtitle {
+    display:none;
+  }
+  #startDate,
+  #reportDate {
+    font-size:22px;
+  }
+    #startDate big,
+    #reportDate big {
+      display: none;
+    }
+
+    #startDate small,
+    #reportDate small {
+      display: block;
+    }
+
+
+  #frequency {
+    display:none;
+  }
+  #credits {
+    font-size:12px;
+  }
+
+}
+
+
+
+@media screen and (max-width:600px) {
+  #header {
+    min-height:55px;
+  }
+  #logo {
+    top:5px;
+  }
+  #subtitle {
+    font-size:18px;
+  }
+  #legtitle {
+    font-size:16px;
+  }
+  #startDate,
+  #reportDate {
+    font-size:16px;
+  }
+  #frequency sub {
+    display:none;
+  }
+  #frequency sub+sup:before {
+    display:none;
+  }
+  
+}
+
+
+
+@media screen and (max-width:410px), screen and (max-height:510px) {
+  #titles {
+    display:none;
+  }
+  #credits {
+    font-size: 11px;
+  }
+}
+

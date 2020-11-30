@@ -1,0 +1,73 @@
+﻿html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;	padding:0;	border:0;	font-size:100%;	font:inherit;	vertical-align:baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+/*body{line-height:1;}*/
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+u,s{text-decoration:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a,a:link,a:active,a:visited,a:hover{text-decoration:none;}
+strong{font-weight:bold;}
+.nosel{-moz-user-select: -moz-none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;}
+.dnone{display:none !important;}
+@font-face {
+  font-family: 'ptsans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('pt_sans_narrow_400.ttf');
+  src: url('pt_sans_narrow_400.eot');
+  src: url('pt_sans_narrow_400.eot?#iefix') format('embedded-opentype'), url('pt_sans_narrow_400.woff') format('woff'), url('pt_sans_narrow_400.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ptsans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('pt_sans_narrow_700.ttf');
+  src: url('pt_sans_narrow_700.eot');
+  src: url('pt_sans_narrow_700.eot?#iefix') format('embedded-opentype'), url('pt_sans_narrow_700.woff') format('woff'), url('pt_sans_narrow_700.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'haettenschweiler';
+  font-style: normal;
+  font-weight: 400;
+  src: url('haettenschweiler.ttf');
+  src: url('haettenschweiler.eot');
+  src: url('haettenschweiler.eot?#iefix') format('embedded-opentype'), url('haettenschweiler.woff') format('woff'), url('haettenschweiler.ttf') format('truetype');
+}
+@font-face{
+	font-family:"fab";
+	font-style:normal;
+	font-weight:400;
+	font-display:block;
+	src:url(free-fa-brands-400.eot);
+	src:url(free-fa-brands-400.eot?#iefix) format("embedded-opentype"),
+			url(free-fa-brands-400.woff2) format("woff2"),
+			url(free-fa-brands-400.woff) format("woff"),
+			url(free-fa-brands-400.ttf) format("truetype")
+}
+
+@font-face{
+	font-family:"fa";
+	font-style:normal;
+	font-weight:400;
+	font-display:block;
+	src:url(free-fa-regular-400.eot);
+	src:url(free-fa-regular-400.eot?#iefix) format("embedded-opentype"),
+			url(free-fa-regular-400.woff2) format("woff2"),
+			url(free-fa-regular-400.woff) format("woff"),
+			url(free-fa-regular-400.ttf) format("truetype")
+}
+
+@font-face{
+font-family:"fas";
+	font-style:normal;
+	font-weight:900;
+	font-display:block;
+	src:url(free-fa-solid-900.eot);
+	src:url(free-fa-solid-900.eot?#iefix) format("embedded-opentype"),
+			url(free-fa-solid-900.woff2) format("woff2"),
+			url(free-fa-solid-900.woff) format("woff"),
+			url(free-fa-solid-900.ttf) format("truetype")
+	
+}

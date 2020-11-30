@@ -1,0 +1,399 @@
+﻿html, body {
+  height:100%;
+  width:100%;
+  box-sizing:border-box;
+  
+}
+body, * {
+  font-family:ptsans;
+  font-size:14px;
+}
+select,option {
+  font-family:ptsans;
+}
+strong {
+  font-weight:bold;
+}
+#body {
+  display:table;
+  height:100%;
+  width:100%;
+}
+    #body>* {
+      display:table-row;
+    }
+    #body>*>* {
+      display:table-cell;
+    }
+    #body>*>*>div {
+      height:100%;
+      width:100%;
+      position:relative;
+      box-sizing:border-box;
+    }
+    #body>main>section {
+      height:100%;
+    }
+
+body.FULLSCREEN {
+  padding-bottom:0;
+}
+body.FULLSCREEN>#body>header,
+body.FULLSCREEN>#body>footer,
+body.FULLSCREEN>nav {
+  display:none;
+}
+body.FULLSCREEN #header {
+  min-height:inherit;
+}
+
+#header {
+  position:relative;
+  min-height:110px;
+}
+    #logo {
+      position:absolute;
+      display:block;
+      top:10px;
+      height:90%;
+      left:177px;
+      transform:translateX(-50%);
+      z-index:1000;
+    }
+    
+    #titles {
+      position:absolute;
+      display:table;
+      top:0;
+      bottom:0;
+      height:100%;
+      left:50%;
+      transform:translateX(-50%);
+      white-space:nowrap;
+      text-align:center;
+    }
+        #titles>div>span {
+          display:table-cell;
+          vertical-align:middle;
+        }
+        #subtitle {
+          display:table-row;
+          font-size:29px;
+          font-weight:bold;
+        }
+            #subtitle.empty {
+              display:none;
+            }
+        #legtitle {
+          display:table-row;
+          font-size:16px;
+          font-weight:bold;
+        }
+        #legtitle>span {
+          vertical-align:bottom !important;
+        }
+            #legtitle.empty {
+              display:none;
+            }
+
+        #startDate,
+        #reportDate {
+          display:none;
+          font-size:24px;
+          font-weight:bold;
+        }
+          #startDate em ,
+          #reportDate em {
+          }
+          #startDate small,
+          #reportDate small {
+            display:none;
+          }
+        body.STANDBY #startDate,
+        body.PRERACE #startDate,
+        body.STARTED #startDate {
+          display:table-row;
+        }
+        body.RUNNING #reportDate,
+        body.FINISH #reportDate {
+          display:table-row;
+        }
+
+        #frequency {
+          display:table-row;
+          visibility:hidden;
+          font-size:14px;
+        }
+            #frequency .hours {
+              display:inline-block;
+            }
+                #frequency .hours.off {
+                  display: none;
+                }
+                #frequency .hours.unique i {
+                  display: none;
+                }
+                #frequency .hours.unique i.on {
+                  display: inline-block;
+                }
+                #frequency .hours.unique i.on:before {
+                  content: '';
+                }
+                #frequency .hours i {
+                  display:inline-block;
+                  margin: 0 3px;
+                }
+                #frequency .hours i.on {
+                }
+                #frequency .hours i:before {
+                  content: '• ';
+                }
+                #frequency .hours i:first-of-type:before {
+                  content: '';
+                }
+            #frequency .range {
+              display:inline-block;
+            }
+                #frequency .range+.hours:before {
+                  content:' | ';
+                }
+                #frequency .range+.hours:empty:before {
+                  display:none;
+                }
+                #frequency .range:empty+.hours:before {
+                  display:none;
+                }
+
+        body.RUNNING #frequency {
+          visibility:visible;
+        }
+
+
+nav  {
+  position:absolute;
+  right:0px;
+  top:0px;
+  z-index:10000;
+}
+    nav.on  {
+		 left:0px;
+     right:0px;
+     bottom:0px;
+    }
+    nav section {
+      display:none;
+      height:100%;
+      width:100%;
+    }
+    nav article {
+      display:table-cell;
+      vertical-align:middle;
+      text-align:center;
+    }
+    nav .buttons {
+      position:absolute;
+      right:5px;
+      top:5px;
+    }
+        nav .burger {
+          position:relative;
+          width:39px;
+          height:39px;
+          cursor:pointer;
+        }
+          nav .burger .line {
+            position: relative;
+            display: inline-block;
+            width: 21px;
+            height: 3px;
+            margin: 18px 0 0 9px;
+            box-sizing: border-box;
+          }
+            nav .burger .line:before {
+              content: '';
+              position: absolute;
+              top: -7px;
+              display: block;
+              width: 21px;
+              height: 3px;
+            }
+            nav .burger .line:after {
+              content: '';
+              position: absolute;
+              bottom: -7px;
+              display: block;
+              width: 21px;
+              height: 3px;
+            }
+        nav .cross {
+          position:relative;
+          display:none;
+          width:39px;
+          height:39px;
+          cursor:pointer;
+        }
+           nav .cross:before,
+           nav .cross:after {
+              content:'';
+              top:17px;
+              left:7px;
+              position:absolute;
+              display:block;
+              width:25px;
+              height:4px;
+            }
+           nav .cross:before {
+              -ms-transform:rotate(45deg);
+              -webkit-transform:rotate(45deg);
+              transform:rotate(45deg);
+            }
+           nav .cross:after  {
+              -ms-transform:rotate(-45deg);
+              -webkit-transform:rotate(-45deg);
+              transform:rotate(-45deg);
+            }
+    nav ul {
+      display:block;
+      width:calc(100% - 10px);
+      margin-left:5px;
+    }
+    nav li {
+      display:block;
+      width:100%;
+      margin:2px 0;
+    }
+      nav a {
+      display:block;
+      font-size:4vh;
+      width:100%;
+      }
+      nav a:hover {
+      }
+      nav li.on a {
+      }
+    nav.on section {
+      display:table;
+    }
+    nav.on .burger  {
+      display:none;
+    }
+    nav.on .cross {
+      display:block;
+    }
+    nav ul#legs {
+      border-bottom-style:solid;
+      border-bottom-width:4px;
+    }
+    nav ul.pages {
+      display:none;
+    }
+    nav ul.pages.on {
+      display:inline-block;
+    }
+    nav .buttons>img {
+      display: none;
+    }
+nav.onLeft {
+	right:auto;
+  left:0;
+}
+nav.onLeft.on {
+	right:0;
+  left:0;
+}
+  nav.onLeft .buttons {
+		right:auto;
+	  left:5px;
+  }
+
+#socialnetwork {
+	position:absolute;
+}
+#socialnetwork a {
+  display:block;
+	width:20px;
+  height:20px;
+}
+#socialnetwork.horiz a {
+  display:inline-block;
+  padding:0 2px;
+}
+#socialnetwork svg {
+	width:100%;
+  height:100%;
+}
+
+#main {
+  position:relative;
+}
+
+#footer {
+  padding:5px;
+}
+    #credits {
+      text-align:center;
+      font-size:15px;
+      line-height:20px;
+    }
+    #credits a {
+      opacity:0.6;
+    }
+    #credits a:hover {
+      opacity:1;
+    }
+
+
+
+.clock b {
+  font-weight:bold;
+  opacity:1 !important;
+}
+.clock * {
+  font-style:normal;
+  text-decoration:none;
+  font-weight:normal;
+  opacity:1;
+  display:inline-block;
+  padding:1px 7px;
+  border:1px solid rgba(0,0,0,0.1); 
+  border-left-width:0px;
+}
+.clock>*:first-child {
+  border-left-width:1px !important;
+}
+  
+  
+@keyframes uwait {
+    0%   {transform:rotate(0deg);}
+    25%  {transform:rotate(90deg);}
+    50%  {transform:rotate(180deg);}
+    75%  {transform:rotate(270deg);}
+    100% {transform:rotate(360deg);}
+}    
+.wait {
+  display:none;
+  width:20px;
+  height:20px;
+}
+    .wait svg {
+      width:100%;
+      height:100%;
+      animation-name: uwait;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      transform-origin:50% 50%;
+      animation-timing-function: steps(2, end);
+    }
+    .wait path {
+      stroke-width:2px;
+      stroke-linejoin:round;
+      fill:none;
+    }
+.waiting .wait {
+  display:inline-block;
+}
+
+img.imglink {
+  cursor:pointer;
+}
+
