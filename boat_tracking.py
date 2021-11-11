@@ -15,8 +15,9 @@ from shipdict import ShipDict
 sodebo = 'https://sodebo-voile.geovoile.com/'
 vendeeglobe = 'https://tracking2020.vendeeglobe.org/'
 gitana = 'http://gitana-team.geovoile.com/'
+jacques_vabre = 'http://transat-jacques-vabre.geovoile.com/2021/tracker/'
 
-roots_url = [vendeeglobe, sodebo, gitana]
+roots_url = [jacques_vabre]
 
 # Firefox Options
 opts = Options()
@@ -25,9 +26,8 @@ assert opts.headless  # Operating in headless mode
 
 
 class Merger:
-    """
-    Concatain tracking data from several geovoile.com tracking site
-    """
+    """Concatain tracking data from several geovoile.com tracking site."""
+
     def __init__(self):
         """
         constructor creates an ArgumentParser object to implement main interface
@@ -55,7 +55,7 @@ class Merger:
             else:
                 json_filenames.extend(glob.glob(json_filename))
         self.args.json_filenames = json_filenames
-  
+
         self.ship_dict = ShipDict()
         self.gpx = GPX()
         self.gpxx_color = [
@@ -91,7 +91,7 @@ class Merger:
         with Firefox(options=opts) as driver:
             for root_url, prefixe in zip(roots_url, string.ascii_letters):
                 driver.get(root_url)
-                #Wait for page loading
+                # Wait for page loading
                 #TODO : find a better way to wait until page is fully loaded
                 time.sleep(2)
                 #Get url from page JS
@@ -101,8 +101,7 @@ class Merger:
                 configdata_xml = driver.execute_script("return new TextDecoder('utf-8').decode(new UInt8Array(arguments[0]))", list(x.content))
                 #Parse XML to find boats identification
                 root = ET.fromstring(bytes(configdata_xml, 'utf8'))
-                self.ship_dict.new_boat([[prefixe + boat.attrib['id'], boat.attrib['name']] for boat in list(root.find("./boats/"))])
-
+                self.ship_dict.new_boat([[prefixe + boat.attrib['id'], boat.attrib['name']] for boat in root.iter('boat')])
                 #Get boats tracks
                 tracks_url = root_url + driver.execute_script("return tracker._getRessourceUrl('tracks')")
                 x = requests.get(tracks_url)
